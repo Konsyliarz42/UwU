@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=UwU
+Comment=Play random sound from '~/Documents/uwu/sounds'
+Exec=<exec>
+Icon=<icon>
+Terminal=false
+Type=Application
