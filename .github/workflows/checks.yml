@@ -1,8 +1,11 @@
 name: Checks
 on: [push]
 jobs:
-  lint:
+  shellcheck:
+    name: Shellcheck
     runs-on: ubuntu-latest
     steps:
       - name: Run ShellCheck
         uses: azohra/shell-linter@latest
+        with:
+          scandir: $GITHUB_WORKSPACE
