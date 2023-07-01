@@ -1,11 +1,10 @@
 name: Checks
 on: [push]
 jobs:
-  shellcheck:
-    name: Shellcheck
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Run ShellCheck
-        uses: azohra/shell-linter@latest
-        with:
-          path: "$GITHUB_WORKSPACE"
+      - name: Shell Linter
+        uses: azohra/shell-linter@v0.6.0
+      - name: markdown-lint
+        uses: articulate/actions-markdownlint@v1.1.0
